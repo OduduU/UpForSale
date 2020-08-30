@@ -28,6 +28,8 @@ import AppButton from "./app/components/AppButton/AppButton";
 import Card from "./app/components/Card.js/Card";
 import ListingDetailsScreen from "./app/screens/listingDetailsScreen/ListingDetailsScreen";
 import MessagesScreen from "./app/screens/messagesScreen/MessagesScreen";
+import Screen from "./app/screens/Screen";
+import Icon from "./app/components/icon/Icon";
 
 export default function App() {
 	// console.log("Screen: ", Dimensions.get("screen"));
@@ -181,7 +183,10 @@ export default function App() {
 		// <WelcomeScreen />
 		// <ViewImageScreen />
 		// <ListingDetailsScreen />
-		<MessagesScreen />
+		// <MessagesScreen />
+		<Screen>
+			<Icon name="email" size={50} backgroundColor="red" iconColor="white" />
+		</Screen>
 		// <View
 		// 	style={{
 		// 		flex: 1,
