@@ -30,6 +30,7 @@ import ListingDetailsScreen from "./app/screens/listingDetailsScreen/ListingDeta
 import MessagesScreen from "./app/screens/messagesScreen/MessagesScreen";
 import Screen from "./app/screens/Screen";
 import Icon from "./app/components/icon/Icon";
+import ListItem from "./app/components/listItem/ListItem";
 
 export default function App() {
 	// console.log("Screen: ", Dimensions.get("screen"));
@@ -185,7 +186,11 @@ export default function App() {
 		// <ListingDetailsScreen />
 		// <MessagesScreen />
 		<Screen>
-			<Icon name="email" size={50} backgroundColor="red" iconColor="white" />
+			<ListItem
+				title="My title"
+				subTitle="My Subtitle"
+				ImageComponent={<Icon name="email" />}
+			/>
 		</Screen>
 		// <View
 		// 	style={{
