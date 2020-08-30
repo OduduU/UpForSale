@@ -27,6 +27,7 @@ import AppText from "./app/components/AppText/AppText";
 import AppButton from "./app/components/AppButton/AppButton";
 import Card from "./app/components/Card.js/Card";
 import ListingDetailsScreen from "./app/screens/listingDetailsScreen/ListingDetailsScreen";
+import MessagesScreen from "./app/screens/messagesScreen/MessagesScreen";
 
 export default function App() {
 	// console.log("Screen: ", Dimensions.get("screen"));
@@ -179,6 +180,8 @@ export default function App() {
 		// </View>
 		// <WelcomeScreen />
 		// <ViewImageScreen />
+		// <ListingDetailsScreen />
+		<MessagesScreen />
 		// <View
 		// 	style={{
 		// 		flex: 1,
@@ -239,7 +242,6 @@ export default function App() {
 		// 		image={require("./app/assets/jacket.jpg")}
 		// 	/>
 		// </View>
-		<ListingDetailsScreen />
 	);
 }
 

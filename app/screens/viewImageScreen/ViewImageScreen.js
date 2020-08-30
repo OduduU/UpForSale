@@ -1,5 +1,6 @@
 import React from "react";
 import { View, StyleSheet, Image } from "react-native";
+import { MaterialCommunityIcons } from "@expo/vector-icons";
 
 import colors from "../../config/colors";
 
@@ -7,8 +8,8 @@ function ViewImageScreen() {
 	return (
 		<View style={styles.background}>
 			<View style={styles.buttonContainer}>
-				<View style={styles.leftButton} />
-				<View style={styles.rightButton} />
+				<MaterialCommunityIcons name="close" color="white" size={30} />
+				<MaterialCommunityIcons name="trash-can-outline" color="white" size={30} />
 			</View>
 			<Image source={require("../../assets/chair.jpg")} style={styles.viewImage} />
 		</View>
@@ -60,16 +61,6 @@ const styles = StyleSheet.create({
 		position: "absolute",
 		top: 30,
 		paddingHorizontal: 25,
-	},
-	leftButton: {
-		width: 45,
-		height: 45,
-		backgroundColor: colors.primary,
-	},
-	rightButton: {
-		width: 45,
-		height: 45,
-		backgroundColor: colors.secondary,
 	},
 	viewImage: {
 		width: "100%",
